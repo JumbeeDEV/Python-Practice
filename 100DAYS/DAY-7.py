@@ -10,3 +10,5 @@ user_guess = input("Guess a letter: ").lower()
 for letter in chosen_word:
     if letter == user_guess:
         print("Right")
+    elif letter != user_guess:
+        print("Wrong")
