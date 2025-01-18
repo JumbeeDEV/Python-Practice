@@ -6,9 +6,13 @@ chosen_word = random.choice(wordlist)
 
 print(chosen_word)
 
+for char in chosen_word:
+    print("_" , end=" ")
+
 user_guess = input("Guess a letter: ").lower()
 for letter in chosen_word:
     if letter == user_guess:
-        print("Right")
+        print(letter, end = " ")
     elif letter != user_guess:
-        print("Wrong") 
+        print("_", end = " ") 
+    
