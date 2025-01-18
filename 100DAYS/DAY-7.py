@@ -11,4 +11,4 @@ for letter in chosen_word:
     if letter == user_guess:
         print("Right")
     elif letter != user_guess:
-        print("Wrong")
+        print("Wrong") 
