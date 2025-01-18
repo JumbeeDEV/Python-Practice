@@ -8,20 +8,22 @@ print(chosen_word)
 
 display = []
 while not end_of_game:
+    for char in chosen_word:
+        display += "_"
     user_guess = input("Guess a letter: ").lower()
+    
 
-    for letter in chosen_word:
+    for position in range(len(chosen_word)):
+        letter = chosen_word[position]
         if letter == user_guess:
-            display.append(letter)
-        elif letter != user_guess:
-            display += "_"
+            display[position] = letter
 
-    print(display)
-
-
-
-if "_" not in display:
-    end_of_game = True
-    print("You win")
+    if "_" not in display:
+        end_of_game = True
+        print("You win")
+    else:
+        print("try again")
+    
+print("game over")
 
 
