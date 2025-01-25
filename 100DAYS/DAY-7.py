@@ -30,5 +30,3 @@ while not end_of_game:
         print("try again")
     
 print("game over")
-
-
